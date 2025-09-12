@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>EcoCharm - Joyería Sostenible</title>
+  <link rel="stylesheet" href="style.css">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="public/logo.jpg">
+  <link rel="icon" type="image/x-icon" href="public/logo.ico">
+</head>
+
+<!-- WhatsApp Chatbot -->
+<a href="https://wa.me/3132352484?text=Hola%20EcoCharm,%20quiero%20saber%20más%20sobre%20sus%20productos" 
+   class="whatsapp-chat" target="_blank">
+   <img src="public/whatsapp-logo.png" alt="WhatsApp" />
+   
+</a>
+
+<!-- Chatbot de Chatbase -->
+<script>
+(function(){if(!window.chatbase||window.chatbase("getState")!=="initialized"){window.chatbase=(...arguments)=>{if(!window.chatbase.q){window.chatbase.q=[]}window.chatbase.q.push(arguments)};window.chatbase=new Proxy(window.chatbase,{get(target,prop){if(prop==="q"){return target.q}return(...args)=>target(prop,...args)}})}const onLoad=function(){const script=document.createElement("script");script.src="https://www.chatbase.co/embed.min.js";script.id="NNdASi2He1-nO_eVQYHQg";script.domain="www.chatbase.co";document.body.appendChild(script)};if(document.readyState==="complete"){onLoad()}else{window.addEventListener("load",onLoad)}})();
+</script>
+
+
+<body>
+  <!-- Header -->
+  <header class="header">
+    <div class="header-content">
+      <img src="public/logo 2.jpeg" alt="EcoCharm Logo" class="logo">
+      <h1>EcoCharm</h1>
+      <p>Joyería sostenible con elegancia y estilo</p>
+    </div>
+  </header>
+
+ <!-- Botones de categorías -->
+  <p class="explora-categorias">Explora Nuestras Categorías</p>
+<div class="category-buttons">
+  <button class="category-btn" onclick="window.location.href='collares.html'">Collares</button>
+  <button class="category-btn" onclick="window.location.href='pulseras.html'">Pulseras</button>
+  <button class="category-btn" onclick="window.location.href='anillos.html'">Anillos</button>
+  <button class="category-btn" onclick="window.location.href='aretes.html'">Aretes</button>
+  <button class="category-btn" onclick="window.location.href='material pop.html'">Material POP</button>
+</div>
+
+
+
+  <!-- Carousel Section -->
+  <section class="section">
+    <div class="container">
+      <h2 class="section-title">Nuestras Creaciones</h2>
+      <div class="carousel-container">
+        <img src="public/carrusel/carrusel 2.png" alt="Colección Eco-Friendly" class="carousel-slide active">
+        <img src="public/carrusel/carrusel 1.jpg" alt="Collar Verde" class="carousel-slide">
+        <img src="public/carrusel/casrrusel 3.png" alt="Pulsera Dorada" class="carousel-slide">
+        <img src="public/carrusel/carrusel 4.png" alt="Aretes Florales" class="carousel-slide">
+        <img src="public/carrusel/carrusel 5.png" alt="Aretes Florales" class="carousel-slide">
+        
+        <button class="carousel-nav carousel-prev" onclick="changeSlide(-1)">❮</button>
+        <button class="carousel-nav carousel-next" onclick="changeSlide(1)">❯</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section class="contact-section">
+    <div class="container">
+      <h2 class="section-title">Contáctanos</h2>
+      <form class="contact-form" onsubmit="submitForm(event)">
+        <div class="form-group">
+          <label for="name">Nombre:</label>
+          <input type="text" id="name" name="name" required>
+        </div>
+
+        <div class="form-group">
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required>
+        </div>
+
+        <div class="form-group">
+          <label for="message">Mensaje:</label>
+          <textarea id="message" name="message" required placeholder="Cuéntanos sobre tu interés en nuestros productos..."></textarea>
+        </div>
+
+        <button type="submit" class="btn">Enviar Mensaje</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- Enlace al JavaScript -->
+  <script src="script.js"></script>
+</body>
+</html>
